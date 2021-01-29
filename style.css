@@ -1,0 +1,319 @@
+.login_screen { 
+    height: 100%; 
+    background: #17a2b8;
+} 
+
+ul.center {
+    margin: 0;  /* 余分なマージンを消去 */
+    padding: 0; /* 余分なパディングを消去 */
+}
+
+ul.bold-white {
+    font-size: 16px;
+    color:#FFF;
+    font-weight: bold;
+    text-align: center;
+}
+ul.bold-blue {
+    font-size: 16px;
+    color:#007bff;
+    font-weight: bold;
+    text-align: center;
+}
+ul.bold-black {
+    font-size: 16px;
+    color:#000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ul-align-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.b-radius {
+  border-radius: 10px; /* ボックスの四つ角を丸くする */
+}
+
+
+.email-label,.password-label{
+    display: block;
+    margin-bottom:4px;
+    font-size:14px;
+    color:#24244b
+}
+
+img.top{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    object-fit: cover; 
+
+}
+
+span.username {
+  background: linear-gradient(transparent -20%, #fbd 0%);
+    font-size: 1em;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+  }
+
+
+  a.t-white{
+    color: rgb(255, 255, 255);
+  }
+
+  div.j-yellow{
+    background-color: rgb(255, 255, 0);
+  }
+  button.j-red{
+    background-color: rgb(255, 0, 0);
+  }
+
+  span.report_deny_title {
+    color:rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  span.report_deny,span.report_deny_date {
+    font-size: 1.5em;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+  }
+  span.report_deny_date {
+    font-size: 0.8em;
+  }
+
+  span.report_wait_title,span.report_allow_title {
+  color:rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+span.report_wait,span.report_allow,span.report_wait_date,span.report_allow_date {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+span.report_wait_date,span.report_allow_date {
+  font-size: 0.6em;
+}
+
+span.report_show_setting{
+  font-size: 0.6em;
+}
+
+
+span.report_look {
+  color:rgb(255, 0, 0);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+span.login_result {
+  color:rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+button.main_report{
+  display: inline;
+}
+
+
+
+
+
+
+  .flexiblebox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+    justify-content: center; /* 横方向中央揃え */
+   }
+
+
+
+
+  
+  table {
+    border-collapse: collapse;
+  }
+
+
+
+  p.report {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+   
+  input[type="submit"],
+  input[type="text"],
+  select,
+  textarea,
+  button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+   
+  
+  input[type="text"],
+  textarea {
+    background: #f8f8f8;
+    display: block;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 100%;
+    transition: 0.8s;
+    border-radius: 0;
+  }
+   
+  input[type="password"],
+  textarea {
+    background: #f8f8f8;
+    display: block;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 100%;
+    transition: 0.8s;
+    border-radius: 0;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    background: #e9f5fb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+   
+  textarea[name="content"] {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+  }
+   
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+  }
+   
+  ::-webkit-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  ::-moz-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  :-ms-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  .form-table {
+    width: 100%;
+  }
+   
+  .form-table th,
+  .form-table td {
+    padding: 5px 0px 5px 0px;
+  }
+   
+  .form-table th.tate {
+    background: #ffecea;
+    padding-left: 20px;
+    position: relative;
+    text-align: left;
+    width: 300px;
+  }
+  .form-table th.tate,
+  .form-table td.tate {
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  }
+  .form-table td.span {
+      width:5px;
+  }
+  .form-table th.slim{
+    position: relative;
+    text-align: left;
+    height: 0px;
+    width: 20%;
+  }
+  .form-table td.slim {
+    text-align: left;
+    padding: 0px;
+  }
+
+  label.bold{
+    font-size: 16px;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    background-color: #6c757d;
+  }
+  label.bold2{
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  label.title_report_look{
+    font-size: 24px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffa600;
+  }
+
+  label.title_login{
+    font-size: 24px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    background-color: #808080;
+  }
+
+  label.title_login_result{
+    font-size: 24px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    background-color: #808080;
+  }
+
+  label.title_main{
+    font-size: 24px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    background-color: #ececec;
+  }
+
+  
+  label.title_report{
+    font-size: 24px;
+    color:rgb(73, 0, 168);
+    font-weight: bold;
+    text-align: center;
+    background-color: #caeef3;
+  }
